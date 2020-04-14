@@ -151,10 +151,10 @@ public class BSTNode<E extends Comparable<E>> {
                 this.left.inorder();
             }
             else {
-                System.out.println(this.getElement());
+                System.out.print(this.getElement() + " ");
                 return;
             }
-            System.out.println(this.getElement());
+            System.out.print(this.getElement() + " ");
             if (this.right == null) {
                 return;
             }
@@ -171,7 +171,7 @@ public class BSTNode<E extends Comparable<E>> {
             return;
         } else {
             if (this != null) {
-                System.out.println(this.getElement());
+                System.out.print(this.getElement() + " ");
                 if (this.left != null) {
                     this.left.preorder();
                     if (this.right != null) {
@@ -201,11 +201,11 @@ public class BSTNode<E extends Comparable<E>> {
                 this.left.postorder();
                 if (this.right != null) {
                     this.right.postorder();
-                    System.out.println(this.getElement());
+                    System.out.print(this.getElement() + " ");
                 }
             }
             else {
-                System.out.println(this.getElement());
+                System.out.print(this.getElement() + " ");
                 return;
             }
 
