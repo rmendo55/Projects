@@ -1,3 +1,7 @@
 .idea/
 out/
+<<<<<<< HEAD
 projects.iml
+=======
+java_projects.iml
+>>>>>>> 1c6c1581306188d0e138b0ad10d28b2f8f6eab74
