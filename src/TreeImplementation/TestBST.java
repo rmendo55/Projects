@@ -11,9 +11,14 @@ public class TestBST {
         tree.insert(67);
         tree.insert(107);
 
-        System.out.println(tree.maxDepth());
+        System.out.println("Max Depth: " + tree.maxDepth());
+        System.out.println("Inorder: ");
         tree.inorder();
+        System.out.println();
+        System.out.println("Preorder: ");
         tree.preorder();
+        System.out.println();
+        System.out.println("PostOrder: ");
         tree.postOrder();
     }
 
