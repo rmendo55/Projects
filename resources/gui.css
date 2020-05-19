@@ -1,0 +1,13 @@
+.hBox {
+    -fx-spacing: 10;
+}
+.title {
+    -fx-text-fill: green;
+     -fx-stroke-fill: red;
+     -fx-font-family: verdana;
+     -fx-font-size: 20;
+ }
+
+ .grid {
+      -fx-hgap: 60;
+   }
