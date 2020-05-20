@@ -9,6 +9,9 @@ import java.sql.*;
 
 import static java.lang.Class.forName;
 
+/**
+ * This class starts the database application
+ */
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
