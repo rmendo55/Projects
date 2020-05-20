@@ -9,8 +9,12 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+/**
+ * This class represents the main page. Allows person to choose either view database or add car part
+ */
 public class MainPage {
-
+    private Stage stage;
+    private Scene scene;
     public MainPage() { }
     public BorderPane setElements() {
         BorderPane border = new BorderPane();
@@ -32,16 +36,22 @@ public class MainPage {
         return border;
     }
     public void handleButton1(BorderPane border) {
-        DatabasePage database = new DatabasePage(border);
+        DatabasePage database = new DatabasePage(border, this);
         database.readDatabase();
     }
 
     public void displayPage() {
-        Stage stage = new Stage();
+        this.stage = new Stage();
         stage.setTitle("Main Page");
-        Scene scene = new Scene(setElements(),400,400);
+        this.scene = new Scene(setElements(),400,400);
         scene.getStylesheets().add("file:resources/gui.css");
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void redisplayMainPage(BorderPane border) {
+        this.scene = new Scene(border, 400,400);
+        this.scene.getStylesheets().add("file:resources/gui.css");
+        this.stage.setScene(this.scene);
     }
 }
