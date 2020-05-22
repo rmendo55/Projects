@@ -15,29 +15,39 @@ import javafx.stage.Stage;
 public class MainPage {
     private Stage stage;
     private Scene scene;
+
     public MainPage() { }
     public BorderPane setElements() {
         BorderPane border = new BorderPane();
         Label title = new Label("Fusion Colors Auto Body Repair & Painting");
-        title.getStyleClass().add("title");
         HBox hBox = new HBox();
-        hBox.getStyleClass().add("hBox");
-        hBox.setAlignment(Pos.CENTER);
         Button button1 = new Button("View Database");
         Button button2 = new Button("Add new car part");
-        button1.setOnAction(e -> {
-            handleButton1(border);
-        });
+
         hBox.getChildren().addAll(button1,button2);
         border.setCenter(hBox);
         border.setTop(title);
+        hBox.setAlignment(Pos.CENTER);
         border.setAlignment(hBox, Pos.CENTER);
         border.setAlignment(title, Pos.CENTER);
+        hBox.getStyleClass().add("hBox");
+        title.getStyleClass().add("title");
+        button1.setOnAction(e -> {
+            handleButton1(border);
+        });
+        button2.setOnAction(e -> {
+            handleButton2(border);
+        });
         return border;
     }
     public void handleButton1(BorderPane border) {
         DatabasePage database = new DatabasePage(border, this);
         database.readDatabase();
+    }
+
+    public void handleButton2(BorderPane border) {
+        AddNewCarPart addCarPart = new AddNewCarPart(border, this);
+        addCarPart.createUserInput();
     }
 
     public void displayPage() {
@@ -53,5 +63,9 @@ public class MainPage {
         this.scene = new Scene(border, 400,400);
         this.scene.getStylesheets().add("file:resources/gui.css");
         this.stage.setScene(this.scene);
+    }
+
+    public Stage getStage() {
+        return this.stage;
     }
 }
