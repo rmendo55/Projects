@@ -7,14 +7,15 @@ public class PartInfo {
     private String partName;
     private String usedPart;
     private String newPart;
-    private ArrayList<String> images;
+    private String images;
     public PartInfo(){}
 
-    public PartInfo(int partNumber, String partName, String usedPart, String newPart, ArrayList<String> images) {
+    public PartInfo(int partNumber, String partName, String usedPart, String newPart, String images) {
         this.partNumber = partNumber;
         this.partName = partName;
         this.usedPart = usedPart;
         this.newPart = newPart;
+        this.images = images;
     }
 
     public int getPartNumber() {
@@ -33,6 +34,9 @@ public class PartInfo {
         return newPart;
     }
 
+    public String getImages() {
+        return this.images;
+    }
     public void setPartNumber(int partNumber) {
         this.partNumber = partNumber;
     }
