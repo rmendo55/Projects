@@ -16,7 +16,7 @@ public class Car extends PartInfo{
         this.year = year;
     }
 
-    public Car(String make, String model, int year, int partNumber, String partName, String usedPart, String newPart, ArrayList<String > images) {
+    public Car(String make, String model, int year, int partNumber, String partName, String usedPart, String newPart, String images) {
         super(partNumber, partName, usedPart, newPart, images);
         this.make = make;
         this.model = model;
