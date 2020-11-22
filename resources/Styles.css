@@ -1,0 +1,209 @@
+.hBox {
+    -fx-spacing: 10;
+}
+.vBox {
+    -fx-spacing: 10;
+}
+.searchBox {
+-fx-padding: 250 0 0 0;
+}
+.scroll-pane{
+-fx-background: transparent;
+-fx-background-color:transparent;
+}
+.search-box .text-field:focused {
+    -fx-background-color: -fx-focus-color, white;
+    -fx-background-insets: -1.4, 1;
+    -fx-background-radius: 14.4;
+}
+.search-box .button {
+    -fx-background-color: null;
+    -fx-background-image: url("search-clear.png");
+}
+.search-box .button:hover {
+    -fx-background-image: url("search-clear-over.png");
+    }
+.title {
+    -fx-text-fill: green;
+     -fx-stroke-fill: red;
+     -fx-font-family: verdana;
+     -fx-font-size: 20;
+ }
+.grid {
+      -fx-hgap: 50;
+}
+
+.background4{
+-fx-background-image:url("background4.jpg");
+-fx-background-repeat: stretch;
+-fx-background-size: cover;
+-fx-background-position: center center;
+}
+.text{
+  color: green;
+}
+.titleText{
+-fx-font-size:80;
+-fx-font-weight:700;
+}
+.logo{
+-fx-background-image:url("logo.png");
+-fx-background-repeat: stretch;
+-fx-background-size: 400;
+-fx-background-position: center center;
+}
+
+.remove {
+-fx-color:#DC143C;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+.remove:hover{
+-fx-color:#00008B;
+}
+
+.modify {
+-fx-color:#DC143C;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+.modify:hover{
+-fx-color:#00008B;
+}
+.yes {
+    -fx-color:green;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+        -fx-font-size: 30px;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: white;
+}
+.yes:hover{
+-fx-color:#00008B;
+}
+.no {
+    -fx-color:green;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-size: 30px;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: white;
+}
+.no:hover{
+-fx-color:#00008B;
+}
+
+
+
+
+
+
+.combo-box .list-cell
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em;
+}
+
+.combo-box-popup .list-view
+{
+    -fx-background-color: white, white;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}
+
+.combo-box-popup .list-view .list-cell
+{
+    -fx-padding: 4 0 4 5;
+
+    /* No alternate highlighting */
+    -fx-background-color: white;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-background: -fx-accent;
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover
+{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+.combo-box-base
+{
+    -fx-skin: "com.sun.javafx.scene.control.skin.ComboBoxBaseSkin";
+    -fx-background-color: black, white, black, white;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-padding: 0;
+}
+
+.combo-box-base:hover
+{
+    -fx-color: -fx-hover-base;
+}
+
+.combo-box-base:showing
+{
+    -fx-color: -fx-pressed-base;
+}
+
+.combo-box-base:focused {
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+
+.combo-box-base:disabled {
+    -fx-opacity: .4;
+}
+
+
+.v1{
+-fx-vgap:50;
+}
+
+
+.btn1{
+-fx-border-color:black;
+-fx-color:#228B22;
+-fx-background-insets: 0,1,4,5,6;
+-fx-background-radius: 9,8,5,4,3;
+-fx-font-weight: bold;
+-fx-font: bold italic 20pt "Arial";
+ -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+-fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+-fx-text-fill: black;
+ -fx-padding: 15 30 15 30;
+}
+.btn1:hover{
+-fx-color:#006400;
+}
+.textField {
+    -fx-background-color: #2fa02f, #a9a9a9;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+   -fx-text-alignment: center;
+      -fx-min-height: 45;
+      -fx-font-size: 25px;
+      -fx-font-style: serif;
+      -fx-font-weight: bold;
+    -fx-alignment: center-right ;
+}
+.textField2 {
+    -fx-background-color: #2fa02f, #a9a9a9;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+   -fx-text-alignment: center;
+      -fx-min-height: 45;
+      -fx-font-size: 16px;
+      -fx-font-style: serif;
+      -fx-font-weight: bold;
+    -fx-alignment: center-right ;
+}
